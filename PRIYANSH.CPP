@@ -1,13 +1,28 @@
 #include<iostream.h>
 #include<conio.h>
-
- enum week {sunday,monday,tuesday,wednesday,thrusday,friday,saturday,};
- int main()
- {
- clrscr();
- week today;
- today=tuesday;
- cout<<"day"<<today+1;
- getch ();
- return 0;
+class box
+{
+private:
+int length;
+public:
+box():length(0){}
+friend int printlength(box);//friend function
+};
+int printlength(box b)
+{
+b.length +=10;
+return b.length;
 }
+int main()
+{
+clrscr();
+box b;x
+cout <<"length of box;"<<printlength(b) <<endl;
+getch();
+return 0;
+}
+
+
+
+
+
